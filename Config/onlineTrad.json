@@ -1,0 +1,54 @@
+{
+    "sequence": [
+        {
+            "FunctionName": "onlineTradInit",
+            "Description": "onlineTradInit",
+            "Condition": {
+                "run": "",
+                "exit": "arg_out.resultCode > 0"
+            },
+            "Path": "../Project/onlineTradInit.js"
+        },
+        {
+            "FunctionName": "update_card_dynamic",
+            "Description": "update_card_dynamic",
+            "Condition": {
+                "run": "arg_in.is_main_card === 1",
+                "exit": "arg_out.resultCode > 0"
+            },
+            "Path": "../Project/updateCardDynamic.js",
+            "FunctionName_front": "",
+            "Description_front": "",
+            "Condition_front": {
+                "run": "",
+                "exit": ""
+            },
+            "Path_front": "",
+            "FunctionName_end": "",
+            "Description_end": "",
+            "Condition_end": {
+                "run": "",
+                "exit": ""
+            },
+            "Path_end": ""
+        },
+        {
+            "FunctionName": "onlineTrad",
+            "Description": "onlineTrad",
+            "Condition": {
+                "run": "",
+                "exit": "arg_out.resultCode > 0"
+            },
+            "Path": "../Project/onlineTrad.js"
+        },
+        {
+            "FunctionName": "querySynInfo",
+            "Description": "querySynInfo",
+            "Condition": {
+                "run": "",
+                "exit": "arg_out.resultCode > 0"
+            },
+            "Path": "../Project/querySynInfo.js"
+        }
+    ]
+}

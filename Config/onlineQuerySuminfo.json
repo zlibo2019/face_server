@@ -1,0 +1,31 @@
+{
+    "sequence": [
+        {
+            "FunctionName": "onlineQuerySuminfoInit",
+            "Description": "onlineQuerySuminfoInit",
+            "Condition": {
+                "run": "",
+                "exit": "arg_out.resultCode > 0"
+            },
+            "Path": "../Project/onlineQuerySuminfoInit.js"
+        },
+        {
+            "FunctionName": "update_card_dynamic",
+            "Description": "update_card_dynamic",
+            "Condition": {
+                "run": "",
+                "exit": "arg_out.resultCode > 0"
+            },
+            "Path": "../Project/updateCardDynamic.js"
+        },
+        {
+            "FunctionName": "querySynInfo",
+            "Description": "querySynInfo",
+            "Condition": {
+                "run": "",
+                "exit": "arg_out.resultCode > 0"
+            },
+            "Path": "../Project/querySynInfo.js"
+        }
+    ]
+}

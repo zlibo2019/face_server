@@ -1,0 +1,40 @@
+{
+    "sequence": [
+        {
+            "FunctionName": "onlineTradUndoInit",
+            "Description": "onlineTradUndoInit",
+            "Condition": {
+                "run": "",
+                "exit": "arg_out.resultCode > 0"
+            },
+            "Path": "../Project/onlineTradUndoInit.js"
+        },
+        {
+            "FunctionName": "update_card_dynamic",
+            "Description": "update_card_dynamic",
+            "Condition": {
+                "run": "arg_in.is_main_card === 1",
+                "exit": "arg_out.resultCode > 0"
+            },
+            "Path": "../Project/updateCardDynamic.js"
+        },
+        {
+            "FunctionName": "onlineTradUndo",
+            "Description": "onlineTradUndo",
+            "Condition": {
+                "run": "",
+                "exit": "arg_out.resultCode > 0"
+            },
+            "Path": "../Project/onlineTradUndo.js"
+        },
+        {
+            "FunctionName": "querySynInfo",
+            "Description": "querySynInfo",
+            "Condition": {
+                "run": "",
+                "exit": "arg_out.resultCode > 0"
+            },
+            "Path": "../Project/querySynInfo.js"
+        }
+    ]
+}

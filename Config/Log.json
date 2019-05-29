@@ -1,0 +1,43 @@
+{
+    "appenders": [
+        {
+            "type": "dateFile",
+            "filename": "./logs/",
+            "pattern": "Debug/Debug_yyyy-MM-dd.log",
+            "absolute": true,
+            "alwaysIncludePattern": true,
+            "category": "LogDebug"
+        },
+        {
+            "type": "dateFile",
+            "filename": "./logs/",
+            "pattern": "Err/Err_yyyy-MM-dd.log",
+            "absolute": true,
+            "alwaysIncludePattern": true,
+            "category": "LogErr"
+        },
+        {
+            "type": "dateFile",
+            "filename": "./logs/",
+            "pattern": "Info/Info_yyyy-MM-dd.log",
+            "absolute": true,
+            "alwaysIncludePattern": true,
+            "category": "LogInfo"
+        },
+        {
+            "type": "dateFile",
+            "filename": "./logs/",
+            "pattern": "Warn/Warn_yyyy-MM-dd.log",
+            "absolute": true,
+            "alwaysIncludePattern": true,
+            "category": "LogWarn"
+        }
+    ],
+    "levels": {
+        "console": "ALL",
+        "LogDebug": "ALL",
+        "LogErr": "ALL",
+        "LogInfo": "ALL",
+        "LogWarn": "ALL"
+    }
+}

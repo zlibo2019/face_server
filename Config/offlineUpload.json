@@ -1,0 +1,40 @@
+{
+    "sequence": [
+        {
+            "FunctionName": "offlineUploadInit",
+            "Description": "offlineUploadInit",
+            "Condition": {
+                "run": "",
+                "exit": "arg_out.resultCode > 0"
+            },
+            "Path": "../Project/offlineUploadInit.js"
+        },
+        {
+            "FunctionName": "offlineUpload",
+            "Description": "offlineUpload",
+            "Condition": {
+                "run": "arg_in.id == 0",
+                "exit": "arg_out.resultCode > 0"
+            },
+            "Path": "../Project/offlineUpload.js"
+        },
+        { 
+            "FunctionName": "offline_record_state_update",
+            "Description": "offline_record_state_update",
+            "Condition": {
+                "run": "arg_in.id > 0 && arg_in.card_trad_serial > 0 && arg_in.db_trad_content == arg_in.trad_content",
+                "exit": "arg_out.resultCode > 0"
+            },
+            "Path": "../Project/offlineRecordStateUpdate.js"
+        },
+        {
+            "FunctionName": "offlineErrorRecordDeal",
+            "Description": "offlineErrorRecordDeal",
+            "Condition": {
+                "run": "arg_in.id > 0 && arg_in.card_trad_serial > 0 && arg_in.db_trad_content != arg_in.trad_content",
+                "exit": "arg_out.resultCode > 0"
+            },
+            "Path": "../Project/offlineErrorRecordDeal.js"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "sequence": [
+        {
+            "FunctionName": "onlineTradRecovery",
+            "Description": "onlineTradRecovery",
+            "Condition": {
+                "run": "",
+                "exit": "arg_out.resultCode > 0"
+            },
+            "Path": "../Project/onlineTradRecovery.js"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "sequence": [
+        {
+            "FunctionName": "online_query_report",
+            "Description": "online_query_report",
+            "Condition": {
+                "run": "",
+                "exit": "arg_out.resultCode > 0"
+            },
+            "Path": "../Project/onlineQueryReport.js"
+        }
+    ]
+}

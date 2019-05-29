@@ -1,0 +1,76 @@
+{
+    "RabbitMQ": {
+        "Host": "127.0.0.1",
+        "Port": 5672,
+        "User": "guest",
+        "PWD": "guest",
+        "ConnectionTimeout": 10000,
+        "AuthMechanism": "AMQPLAIN",
+        "VHost": "/",
+        "NoDelay": true,
+        "SSL": {
+            "enabled": false
+        }
+    },
+    "Controler": {
+        "prefetchNum": 150,
+        "maxConcurrencyNumber": 30,
+        "PushToWaitQueueInterval": 20,
+        "DealInteval": 15,
+        "devIdleTime": 60000
+    },
+    "MySQL": {
+        "connectionLimit": 300,
+        "Host": "127.0.0.1",
+        "Port": 3306,
+        "User": "root",
+        "PWD": "",
+        "DBName": "scm_main",
+        "Pool": true
+    },
+    "PostGre": {
+        "Host": "10.0.0.108",
+        "Port": 5390,
+        "User": "postgres",
+        "PWD": "123456",
+        "DBName": "fintest",
+        "Max": 100,
+        "IdleTimeoutMillis": 10000,
+        "ConnectionTimeoutMillis": 300000
+    },
+    "Redis": {
+        "Host": "192.168.199.197",
+        "Port": 6379,
+        "auth": "zbgqx887310!",
+        "db": 1,
+        "total_retry_time": 60000,
+        "times_connected": 5,
+        "attempt": 3000
+    },
+    "Subscriber": {
+        "Exchange": {
+            "name": "amq.topic",
+            "Options": {
+                "type": "direct",
+                "durable": true,
+                "autoDelete": false,
+                "confirm": true
+            }
+        },
+        "Queue": {
+            "name": "face",
+            "routing": "#",
+            "Options": {
+                "durable": true,
+                "autoDelete": false
+            }
+        }
+    },
+    "UserAgent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
+    "Debug": true,
+    "dbtype": "PostGre",
+    "MAX_SYS_LIMIT": 1000000000,
+    "listenPort":16006,
+    "connectIp":"116.249.5.45",
+    "connectPort":9732
+}
